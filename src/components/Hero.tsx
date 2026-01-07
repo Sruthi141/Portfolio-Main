@@ -131,7 +131,7 @@ export default function Hero() {
               {/* Profile Image */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105">
                 <img
-                  src="/public/photo.png"
+                  src="public/photo.png"
                   alt="Sruthi Kommati"
                   className="w-full h-full object-cover"
                 />
