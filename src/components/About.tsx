@@ -116,7 +116,7 @@ export default function About() {
                   </div>
                   <div className="border-t border-blue-200 pt-4">
                     <p className="text-gray-700 font-semibold">Intermediate (MPC)</p>
-                    <p className="text-gray-600">Rachakonda Junior College, Gollapally</p>
+                    <p className="text-gray-600">Racharala Junior College, Gollapally</p>
                     <p className="text-gray-500 text-sm">Marks: 888/1000 • 2020–2022</p>
                   </div>
                   <div className="border-t border-blue-200 pt-4">
