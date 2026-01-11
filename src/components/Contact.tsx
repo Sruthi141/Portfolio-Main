@@ -63,8 +63,8 @@ export default function Contact() {
     {
       icon: <Mail size={24} />,
       title: 'Personal Email',
-      value: 'sruthikommatisruthi@gmail.com',
-      link: 'mailto:sruthikommatisruthi@gmail.com',
+      value: 'sruthikommatisruthikommati@gmail.com',
+      link: 'mailto:sruthikommatisruthikommati@gmail.com',
       color: 'from-teal-500 to-teal-600',
     },
     {

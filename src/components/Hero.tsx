@@ -1,3 +1,5 @@
+'use client';
+
 import { ArrowRight, Github, Linkedin, Mail, Download, Code2 } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
@@ -56,7 +58,7 @@ export default function Hero() {
                 className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-teal-500 text-white rounded-lg font-semibold hover:shadow-xl transition-all duration-300 hover:scale-105 flex items-center gap-2"
               >
                 View Portfolio
-                <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
+                <ArrowRight size={20} />
               </button>
 
               <button
@@ -69,37 +71,23 @@ export default function Hero() {
 
             {/* SOCIAL LINKS */}
             <div className="flex flex-wrap gap-3 items-center">
-              <a
-                href="https://github.com/Sruthi141"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-xl hover:scale-110 transition-all duration-300"
-              >
+              <a href="https://github.com/Sruthi141" target="_blank" rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
                 <Github size={24} />
               </a>
 
-              <a
-                href="https://www.linkedin.com/in/sruthikommati/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-xl hover:scale-110 transition-all duration-300"
-              >
+              <a href="https://www.linkedin.com/in/sruthikommati/" target="_blank" rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
                 <Linkedin size={24} />
               </a>
 
-              <a
-                href="mailto:sruthi.k22@iiits.in"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-xl hover:scale-110 transition-all duration-300"
-              >
+              <a href="mailto:sruthi.k22@iiits.in"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
                 <Mail size={24} />
               </a>
 
-              <a
-                href="https://leetcode.com/Sruthi141/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:shadow-xl hover:scale-110 transition-all duration-300"
-              >
+              <a href="https://leetcode.com/Sruthi141/" target="_blank" rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
                 <Code2 size={24} />
               </a>
             </div>
@@ -110,7 +98,7 @@ export default function Hero() {
                 href="https://drive.google.com/uc?export=download&id=18Y_qcRU4uqWB_j7IyFuEUoomIC1t1jsW"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white text-gray-700 rounded-lg font-semibold border-2 border-blue-200 hover:border-blue-600 hover:text-blue-600 hover:bg-blue-50 transition-all duration-300 hover:shadow-lg"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-white border-2 border-blue-200 rounded-lg hover:border-blue-600 hover:bg-blue-50 transition shadow-sm"
               >
                 <Download size={20} />
                 Download Resume
@@ -125,17 +113,19 @@ export default function Hero() {
             }`}
           >
             <div className="relative group flex justify-center">
+
               {/* Glow */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-teal-400 blur-3xl opacity-20"></div>
 
-              {/* Profile Image */}
+              {/* Profile Image (circle size unchanged, image smaller) */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105">
                 <img
-                  src="public/photo.png"
+                  src="/public/Photo.png"
                   alt="Sruthi Kommati"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover scale-90 object-[50%_20%]"
                 />
               </div>
+
             </div>
           </div>
 
