@@ -12,9 +12,7 @@ export default function Hero() {
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+    if (element) element.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -71,23 +69,37 @@ export default function Hero() {
 
             {/* SOCIAL LINKS */}
             <div className="flex flex-wrap gap-3 items-center">
-              <a href="https://github.com/Sruthi141" target="_blank" rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
+              <a
+                href="https://github.com/Sruthi141"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition"
+              >
                 <Github size={24} />
               </a>
 
-              <a href="https://www.linkedin.com/in/sruthikommati/" target="_blank" rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
+              <a
+                href="https://www.linkedin.com/in/sruthikommati/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition"
+              >
                 <Linkedin size={24} />
               </a>
 
-              <a href="mailto:sruthi.k22@iiits.in"
-                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
+              <a
+                href="mailto:sruthi.k22@iiits.in"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition"
+              >
                 <Mail size={24} />
               </a>
 
-              <a href="https://leetcode.com/Sruthi141/" target="_blank" rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition">
+              <a
+                href="https://leetcode.com/Sruthi141/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-white rounded-full shadow-md hover:scale-110 transition"
+              >
                 <Code2 size={24} />
               </a>
             </div>
@@ -117,10 +129,10 @@ export default function Hero() {
               {/* Glow */}
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-400 to-teal-400 blur-3xl opacity-20"></div>
 
-              {/* Profile Image (circle size unchanged, image smaller) */}
+              {/* Profile Image */}
               <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-8 border-white shadow-2xl transition-transform duration-500 group-hover:scale-105">
                 <img
-                  src="/public/photo.png"
+                  src="/photo.png"
                   alt="Sruthi Kommati"
                   className="w-full h-full object-cover scale-90 object-[50%_20%]"
                 />
